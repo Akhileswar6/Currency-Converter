@@ -1,0 +1,179 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Main Container */
+.container {
+  background-color: #bdc3c7;
+  border-radius: 20px;
+  padding: 2.5rem;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 480px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+/* Title */
+.container h2 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #101c36;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* Amount Section */
+.amount p {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #334155;
+}
+
+.amount input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid #a2a3a4;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  transition: border-color 0.3s ease;
+}
+
+.amount input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Dropdown Section */
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.from, .to {
+  flex: 1;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.75rem;
+  background: #f8fafc;
+  border: 2px solid #a2a3a4;
+  transition: box-shadow 0.3s;
+  margin-top: 5px;
+}
+
+
+
+.select-container img {
+  width: 34px;
+  height: 24px;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.select-container select {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #0f172a;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Exchange Icon */
+.material-symbols-outlined {
+  margin-top: 19px;
+  font-size: px;
+  color: #f0c907;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.material-symbols-outlined:hover {
+  transform: rotate(180deg);
+}
+
+/* Message */
+.msg {
+  text-align: center;
+  font-weight: 550;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  background-color: #aae6bf;
+  color: #087e31;
+  border: 2px solid #4cae6e;
+  transition: all 0.3s ease;
+}
+
+
+/* Submit Button */
+button {
+  font-family: 'Inter', sans-serif;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .material-symbols-outlined {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+}
