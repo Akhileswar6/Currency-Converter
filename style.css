@@ -170,10 +170,13 @@ button:active {
   .dropdown {
     flex-direction: column;
     align-items: stretch;
+
   }
 
   .material-symbols-outlined {
-    transform: rotate(90deg);
     align-self: center;
+      margin-top: 0;
+      margin-bottom: 0;
+
   }
 }
