@@ -135,9 +135,8 @@ form {
   font-size: 1rem;
   padding: 0.6rem 1rem;
   border-radius: 12px;
-  background-color: #aae6bf;
-  color: #087e31;
-  border: 2px solid #4cae6e;
+  background-color: #ffffff;
+  border: 2px solid #a2a3a4;
   transition: all 0.3s ease;
 }
 
